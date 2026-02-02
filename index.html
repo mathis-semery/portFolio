@@ -541,43 +541,27 @@
             font-size: 1.5rem;
         }
 
-        .skill-item {
-            margin-bottom: 1.5rem;
-        }
-
-        .skill-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .skill-info {
+        .skill-tags {
             display: flex;
-            justify-content: space-between;
-            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+            gap: 0.6rem;
         }
 
-        .skill-info span {
-            font-size: 0.95rem;
+        .skill-tag {
+            padding: 0.5rem 1.2rem;
+            background: rgba(108, 92, 231, 0.15);
+            border: 1px solid rgba(108, 92, 231, 0.3);
+            border-radius: 25px;
+            font-size: 0.9rem;
             color: var(--text);
-        }
-
-        .skill-info span:last-child {
-            color: var(--secondary);
             font-family: 'Fira Code', monospace;
+            transition: all 0.3s ease;
         }
 
-        .skill-bar {
-            height: 8px;
-            background: var(--dark);
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .skill-progress {
-            height: 100%;
-            background: var(--gradient);
-            border-radius: 4px;
-            width: 0;
-            transition: width 1.5s ease;
+        .skill-tag:hover {
+            background: rgba(108, 92, 231, 0.3);
+            border-color: var(--primary);
+            transform: translateY(-2px);
         }
 
         /* Projects Section */
@@ -994,9 +978,9 @@
                 <h3>Developpeur en alternance</h3>
                 <p>
                     Actuellement en BTS SIO option SLAM au Lycee Prive Robert Schuman a Dugny,
-                    je suis passionne par le developpement web et logiciel. Mon parcours a debute
-                    avec un Bac STI2D dans le meme etablissement, ou j'ai decouvert ma passion pour
-                    les technologies numeriques.
+                    interessé par le developpement web et logiciel. Mon parcours a debute
+                    avec un Bac STI2D dans le meme etablissement, ou j'ai pris gout aux
+                    technologies numeriques.
                 </p>
                 <p>
                     En alternance au <strong>Ministere des Armees</strong> en tant que developpeur,
@@ -1009,7 +993,7 @@
                         <div class="stat-label">Annees de formation</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number" data-target="10">0</div>
+                        <div class="stat-number" data-target="3">0</div>
                         <div class="stat-label">Projets realises</div>
                     </div>
                     <div class="stat-item">
@@ -1061,92 +1045,26 @@
         <div class="skills-container">
             <div class="skill-category fade-in">
                 <h3><i class="fas fa-code"></i> Frontend</h3>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>HTML / CSS</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="90"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>JavaScript</span>
-                        <span>75%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="75"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>JavaFX</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="70"></div>
-                    </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">HTML / CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">JavaFX</span>
                 </div>
             </div>
             <div class="skill-category fade-in">
                 <h3><i class="fas fa-server"></i> Backend</h3>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>PHP / Symfony</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="80"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Python / Django</span>
-                        <span>40%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="40"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Java</span>
-                        <span>75%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="75"></div>
-                    </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">PHP / Symfony</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
                 </div>
             </div>
             <div class="skill-category fade-in">
                 <h3><i class="fas fa-database"></i> Base de donnees & Outils</h3>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>SQL / MySQL</span>
-                        <span>85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="85"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Git / GitHub</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="80"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Appian</span>
-                        <span>60%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="60"></div>
-                    </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">SQL / MySQL</span>
+                    <span class="skill-tag">Git / GitHub</span>
+                    <span class="skill-tag">Appian</span>
                 </div>
             </div>
         </div>
@@ -1159,12 +1077,30 @@
             <p>Decouvrez mes realisations academiques et professionnelles</p>
         </div>
         <div class="projects-grid">
-            <!-- Projet Scolaire 1 -->
+            <!-- Projet HSP - JavaFX -->
             <div class="project-card fade-in">
                 <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600" alt="Projet 1">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600" alt="HSP JavaFX">
                     <div class="project-overlay">
-                        <a href="#" title="Voir le projet"><i class="fas fa-eye"></i></a>
+                        <a href="#" title="Code source"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <span class="project-type school">Scolaire</span>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>JavaFX</span>
+                    </div>
+                    <h3>HSP - Application Desktop</h3>
+                    <p>Application de bureau developpee en JavaFX dans le cadre du BTS SIO. Interface graphique interactive avec gestion de donnees et navigation entre vues.</p>
+                </div>
+            </div>
+
+            <!-- Projet HSP - Symfony -->
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600" alt="HSP Symfony">
+                    <div class="project-overlay">
                         <a href="#" title="Code source"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
@@ -1175,111 +1111,25 @@
                         <span>Symfony</span>
                         <span>MySQL</span>
                     </div>
-                    <h3>Nom du Projet</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                    <h3>HSP - Application Web</h3>
+                    <p>Version web du projet HSP realisee avec Symfony. Gestion des utilisateurs, base de donnees MySQL et interface responsive.</p>
                 </div>
             </div>
 
-            <!-- Projet Scolaire 2 -->
+            <!-- Projet Ministere - Appian -->
             <div class="project-card fade-in">
                 <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600" alt="Projet 2">
-                    <div class="project-overlay">
-                        <a href="#" title="Voir le projet"><i class="fas fa-eye"></i></a>
-                        <a href="#" title="Code source"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <span class="project-type school">Scolaire</span>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span>Java</span>
-                        <span>JavaFX</span>
-                    </div>
-                    <h3>Application Desktop</h3>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                </div>
-            </div>
-
-            <!-- Projet Pro 1 -->
-            <div class="project-card fade-in">
-                <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" alt="Projet Pro 1">
-                    <div class="project-overlay">
-                        <a href="#" title="Voir le projet"><i class="fas fa-eye"></i></a>
-                        <a href="#" title="Code source"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <span class="project-type pro">Professionnel</span>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>Django</span>
-                        <span>API</span>
-                    </div>
-                    <h3>Projet Ministere</h3>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                </div>
-            </div>
-
-            <!-- Projet Pro 2 -->
-            <div class="project-card fade-in">
-                <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=600" alt="Projet Pro 2">
-                    <div class="project-overlay">
-                        <a href="#" title="Voir le projet"><i class="fas fa-eye"></i></a>
-                        <a href="#" title="Code source"><i class="fab fa-github"></i></a>
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" alt="Projet Ministere">
                 </div>
                 <span class="project-type pro">Professionnel</span>
                 <div class="project-info">
                     <div class="project-tags">
                         <span>Appian</span>
                         <span>Low-Code</span>
+                        <span>BPM</span>
                     </div>
-                    <h3>Application Interne</h3>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                </div>
-            </div>
-
-            <!-- Projet Personnel -->
-            <div class="project-card fade-in">
-                <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600" alt="Projet Personnel">
-                    <div class="project-overlay">
-                        <a href="#" title="Voir le projet"><i class="fas fa-eye"></i></a>
-                        <a href="#" title="Code source"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <span class="project-type school">Personnel</span>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                    </div>
-                    <h3>Portfolio</h3>
-                    <p>Site portfolio personnel presentant mes competences et realisations avec animations modernes.</p>
-                </div>
-            </div>
-
-            <!-- Projet Scolaire 3 -->
-            <div class="project-card fade-in">
-                <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600" alt="Projet 3">
-                    <div class="project-overlay">
-                        <a href="#" title="Voir le projet"><i class="fas fa-eye"></i></a>
-                        <a href="#" title="Code source"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <span class="project-type school">Scolaire</span>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span>SQL</span>
-                        <span>PHP</span>
-                        <span>API REST</span>
-                    </div>
-                    <h3>API Backend</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <h3>Application Interne - Ministere des Armees</h3>
+                    <p>Developpement d'une application interne sur la plateforme Appian. Conception de processus metier (BPM), creation d'interfaces utilisateur, regles de gestion et integration de donnees via les fonctionnalites low-code d'Appian.</p>
                 </div>
             </div>
         </div>
@@ -1296,7 +1146,7 @@
                 <div class="contact-item fade-in">
                     <i class="fas fa-envelope"></i>
                     <h4>Email</h4>
-                    <a href="mailto:mathis.semery@email.com">mathis.semery@email.com</a>
+                    <a href="mailto:mathis.semery@gmail.com">mathis.semery@gmail.com</a>
                 </div>
                 <div class="contact-item fade-in">
                     <i class="fas fa-map-marker-alt"></i>
@@ -1310,16 +1160,16 @@
                 </div>
             </div>
             <div class="social-links fade-in">
-                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/mathis-semery" title="GitHub"><i class="fab fa-github"></i></a>
+
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 <span>Mathis Semery</span> - Tous droits reserves | Fait avec passion</p>
+        <p>© 2025 <span>Mathis Semery</span> - Tous droits reserves | Fait avec soin</p>
     </footer>
 
     <script>
@@ -1457,7 +1307,7 @@
             'Developpeur Web',
             'Etudiant BTS SIO',
             'Alternant au Ministere des Armees',
-            'Passionne de technologie'
+            'Amateur de technologie'
         ];
         let phraseIndex = 0;
         let charIndex = 0;
@@ -1506,22 +1356,6 @@
 
         document.querySelectorAll('.fade-in, .timeline-item').forEach(el => {
             fadeObserver.observe(el);
-        });
-
-        // Skill Bars Animation
-        const skillObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.querySelectorAll('.skill-progress').forEach(bar => {
-                        const progress = bar.getAttribute('data-progress');
-                        bar.style.width = progress + '%';
-                    });
-                }
-            });
-        }, { threshold: 0.5 });
-
-        document.querySelectorAll('.skill-category').forEach(el => {
-            skillObserver.observe(el);
         });
 
         // Counter Animation
